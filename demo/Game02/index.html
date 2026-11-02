@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>블럭깨기 게임</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrap">
+    <h1>블럭 깨기</h1>
+    <div class="hud">
+      <span>점수: <b id="score">0</b></span>
+      <span>목숨: <b id="lives">3</b></span>
+      <span>레벨: <b id="level">1</b></span>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="gameCanvas" width="640" height="480"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-msg">
+          <h2 id="overlayTitle">블럭 깨기</h2>
+          <p id="overlaySub">시작 버튼을 눌러 게임을 시작하세요</p>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="startBtn">시작</button>
+      <button id="pauseBtn">일시정지</button>
+      <p>← → 방향키 또는 마우스로 패들 이동</p>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
